@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<title>Flexbox</title>
+<style>
+* {
+box-sizing: border-box;
+}
+body {
+font-family: 'Didact Gothic', sans-serif;
+}
+a {
+text-decoration: none;
+color: #1B4F72;
+}
+p {
+font-size: 12px;
+color: #999;
+line-height: 1.6;
+}
+h1 {
+font-size: 38px;
+color: white;
+}
+h2 {
+font-size: 26px;
+}
+h3 {
+
+font-size: 24px;
+}
+h2, h3 {
+color: #1B4F72;
+}
+body {
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+margin: 0;
+}
+header {
+background-color: #fff;
+padding-top: 30px;
+}
+
+header .brand {
+float: left;
+color: #1B4F72;
+margin-bottom: 30px;
+}
+#main {
+display: flex;
+flex: 1;
+flex-direction: row;
+
+}
+#main > article {
+flex: 1;
+}
+#main > nav,
+#main > aside {
+background: #F4D03F;
+}
+#main > nav {
+order: -1;
+}
+header, footer {
+background: #1B4F72;
+height: 15vh;
+}
+header, footer, article, nav, aside {
+padding: 1em;
+}
+@media screen and (max-width: 992px) {
+#main {
+  background: blue;
+  align-content: stretch;
+  flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 575px) {
+#main {
+  background: yellow;
+  flex-direction: column-reverse;
+  }
+}
+#main > aside {
+  display: flex;
+  flex: 0 0 15vw;
+  flez-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+#main > nav {
+  display: flex;
+  flex: 0 0 15vw;
+  flez-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+}
+</style>
+<body>
+<header>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/0ca06f29a6.js"></script>
+
+  <div class="brand">  <h1> Music charity telethon</h1>
+   </div>
+</header>
+<div id="main">
+    <article><h2>Okean Elzy</h2>
+      Okean Elzy is the most famous and most decorated Ukrainian rock band. Okean Elzy has been recognized many times as the best rock-and live-band of the CIS by their admirers and music critics.
+<h3><a href="https://www.youtube.com/watch?v=PwKvTgEdpM0">Okean Elzy - Obiymy</a></h3>
+    </article>
+
+    <article><h2>THE HARDKISS</h2>
+The HARDKISS is a Ukrainian music, English and Ukrainian rock band, founded in 2011. The Hardkiss are representatives of high-quality contemporary Ukrainian music of world level.
+<h3><a href="https://www.youtube.com/watch?v=PwKvTgEdpM0">THE HARDKISS - Helpless</a></h3>
+    </article>
+    <article>
+      <h2>Tina Karol</h2>
+    Tina Karol is a Ukrainian singer and actress, TV presenter, and public figure. People's Artist of Ukraine (2017), soloist of the Song and Dance Ensemble of the Armed Forces of Ukraine. She is one of the 100 most influential women in Ukraine according to FOCUS magazine.
+      <h3><a href="https://www.youtube.com/watch?v=867xUWyjJJI">Tina Karol and Yuliya Sanina- Vil'na</a></h3>
+      </article>
+<nav><h2>About the telethon</h2>
+An International Charity Concert-Marathon aimed at supporting Ukraine and named Save Ukraine – #StopWar will be happening on the basis of TVP, a Polish TV channel, on Sunday, 27 March, at 17:30 European time (18:30 Kyiv time). Save Ukraine - #StopWar is a project aimed at reaching out to millions of people around the world to help Ukrainians live through the war and win it. As the good always wins!
+</nav>
+<aside>
+<div class="c">  A full list of locations, as well as the information on how to become a participant in the campaign, is available <a href="https://docs.google.com/spreadsheets/d/1NqJuJlwGb1q-Ci7QDy9QvXHsTOnPFtQAYz7Vd66AGiY/edit#gid=0">at this link.</a>
+  </div>
+  <div>
+      Charity marathon Save Ukraine. #StopWar. <a href="https://www.youtube.com/watch?v=4fEeOCKMi5M">Full version</a>
+    </div>
+</aside>
+</div>
+<footer>
+<center>
+  <h1>#Stand with Ukraine</h1>
+</center></footer>
+</body>
+</html>
